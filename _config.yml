@@ -1,60 +1,25 @@
-# Developer's Note: This is a sample _config.yml file offered with
-# jekyll-theme-prologue for your convenience. To use it, move it to your
-# project's root directory. Please note that the following lines are
-# NECESSARY for Prologue to work correctly:
-#
-# theme: jekyll-theme-prologue
-# collections: [sections]
-#
-# They activate the theme and tell Jekyll to find your homepage content
-# in /_sections. Note where "sections" starts with an underscore
-# and where it doesn't. The social settings will make links to
-# Twitter, etc., but only if you give the URL.
-#
-# Also, be sure to customize url and baseurl for your site.
-#
-# ---------------------------------------------------------------
-#
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Thanos Andriopoulos 
+title: Thanos Andriopoulos
 subtitle: Embedded C++ / RTOS Software Engineer
 description: 'Embedded C++ and RTOS software engineer building high-performance AI and data-processing software for space and edge hardware.'
 author: Thanos Andriopoulos
 email: andriopoulosthanassis@gmail.com
 avatar: assets/images/photo.png
 
+url: "https://thanosandr.github.io"
+baseurl: ""
 
-# You'll want to customize url and baseurl for your own site:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-
-# Social settings
-facebook_url: https://www.facebook.com/thanassis.andriopoulos
+# Social links (an icon is shown only when a URL is set)
 github_url: https://github.com/ThanosAndr
-googleplus_url:
-instagram_url: https://www.instagram.com/thanos_andr/
 linkedin_url: https://www.linkedin.com/in/thanos-andriopoulos/
-pinterest_url:
-slack_url:
-twitter_url:
+instagram_url: https://www.instagram.com/thanos_andr/
+facebook_url: https://www.facebook.com/thanassis.andriopoulos
 
-# Google Analytics Tracking ID goes here:
-google_analytics: UA-122725422-1
+# Google Analytics 4 measurement ID (G-XXXXXXXXXX). Leave empty to disable.
+# The old Universal Analytics ID (UA-122725422-1) stopped collecting data in 2023.
+google_analytics:
 
-# The following settings are NECESSARY for the Prologue theme to run:
-remote_theme: chrisbobbe/jekyll-theme-prologue
+# Homepage content lives in /_sections
 collections: [sections]
+
+exclude: [README.md, LICENSE.md, Gemfile, Gemfile.lock]

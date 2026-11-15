@@ -1,28 +1,25 @@
-# Project Title
+# thanosandr.github.io
 
-This is the project for my webpage theme
+Source of my personal website, [thanosandr.github.io](https://thanosandr.github.io): who I am, my experience, selected projects and my CV.
 
-# License
+Built with Jekyll and served by GitHub Pages, using a customized copy of the [Prologue](https://html5up.net/prologue) theme by HTML5 UP ([Jekyll port](https://github.com/chrisbobbe/jekyll-theme-prologue) by Chris Bobbe).
 
-This project is licensed under the CCA 3.0 license (html5up.net/license) - see the [LICENSE.md](LICENSE.md) file for details
+## Editing
 
-# Acknowledgments
-Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me, and of course many thanks to HTML5 UP.
+- Homepage sections live in `_sections/` (ordered by `order:` in the front matter).
+- Project pages are the top-level `*.html` files (`/spkrec`, `/sensors`, ...).
+- Site title, links and social profiles are in `_config.yml`.
+- `assets/images/cv.pdf` is a copy of the PDF built from my LaTeX CV repository; replace it whenever the CV changes.
 
-Prologue by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+## Running locally
 
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		Respond.js (j.mp/respondjs)
-		jquery.scrolly (@ajlkn)
-		jquery.scrollzer (@ajlkn)
-		Skel (skel.io)
+```bash
+bundle install
+bundle exec jekyll serve
 ```
+
+Then open http://localhost:4000.
+
+## License
+
+Theme: [CC BY 3.0](https://html5up.net/license) (HTML5 UP); see [LICENSE.md](LICENSE.md).
