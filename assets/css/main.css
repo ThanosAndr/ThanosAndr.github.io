@@ -1985,7 +1985,7 @@ button,
   .item img {
     display: block;
     height: auto;
-    aspect-ratio: 4 / 3; }
+    aspect-ratio: 1 / 1; }
   .item header {
     border-top: solid 1px #eee; }
 
@@ -1998,33 +1998,14 @@ button,
   overflow: hidden;
   box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.1); }
   .image.project.wide {
-    max-width: 100%; }
+    max-width: 784px; }
   .image.project img {
     display: block;
     width: 100%;
     height: auto; }
 
-/* Experience */
-.experience {
-  text-align: left; }
-  .experience h3 {
-    font-size: 1.15em;
-    font-weight: 400;
-    color: #41484c;
-    margin: 0; }
-    .experience h3 a {
-      color: #5F021F;
-      border-bottom: dotted 1px rgba(95, 2, 31, 0.4); }
-  .experience .period {
-    font-size: 0.8em;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #888;
-    margin: 0.2em 0 0.6em 0; }
-  .experience ul {
-    margin-bottom: 1.75em; }
-  .experience li {
-    margin-bottom: 0.4em; }
-  .experience strong {
-    font-weight: 400;
-    color: #41484c; }
+/* Intro cover: darken the background so the text stays readable */
+#main > section.cover img.back {
+  filter: brightness(0.45); }
+#main > section.cover header {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); }
