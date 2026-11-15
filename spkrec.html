@@ -6,7 +6,7 @@ robots: noindex, nofollow
 canonical: false
 permalink: /spkrec
 ---
-
+<span class="image project"><img src="{{ 'assets/images/projects/spkrec.jpg' | relative_url }}" alt="Speaker recognition logo with microphone and circuit board" /></span>
 <p>For my diploma thesis at the Circuits &amp; Systems Lab of NTUA, I designed and built an autonomous, text-independent speaker recognition system running entirely on an STM32F429 microcontroller (ARM Cortex-M4, 180&nbsp;MHz).</p>
 <p>The system extracts Mel-Frequency Cepstral Coefficients (MFCC) from short frames of speech and classifies them with a feed-forward neural network. A decision metric then picks the speaker based on how many frames were matched to each person. It reached over 90% accuracy across the lab's ~10 members.</p>
 <p>I also built the hardware and firmware: an I&sup2;S digital microphone, an SD card over 4-bit SDIO with FatFs and DMA, and external ROM. Early prototypes used an analog microphone sampled through the ADC with DMA, plus an SPI display for testing.</p>
