@@ -31,8 +31,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Thanos Andriopoulos 
-subtitle: Electrical & Computer Engineer
-description: 'My Webpage'
+subtitle: Embedded C++ / RTOS Software Engineer
+description: 'Embedded C++ and RTOS software engineer building high-performance AI and data-processing software for space and edge hardware.'
 author: Thanos Andriopoulos
 email: andriopoulosthanassis@gmail.com
 avatar: assets/images/photo.png

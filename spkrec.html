@@ -7,16 +7,16 @@ canonical: false
 permalink: /spkrec
 ---
 
-<p>My diploma thesis involved the design and implementation of a text-independent speaker recognition system. The system utilized a short-term spectral characteristic extraction method known as Mel-Frequency Cepstral Coefficients (MFCC), a state-of-the-art approach in speech processing.
-	An Artificial Neural Network (ANN) served as the classifier, responsible for categorizing the extracted characteristics. Additionally, a decision metric was developed, leveraging the number of identified inputs for each user to make accurate decisions.</p>
+<p>For my diploma thesis at the Circuits &amp; Systems Lab of NTUA, I designed and built an autonomous, text-independent speaker recognition system running entirely on an STM32F429 microcontroller (ARM Cortex-M4, 180&nbsp;MHz).</p>
+<p>The system extracts Mel-Frequency Cepstral Coefficients (MFCC) from short frames of speech and classifies them with a feed-forward neural network. A decision metric then picks the speaker based on how many frames were matched to each person. It reached over 90% accuracy across the lab's ~10 members.</p>
+<p>I also built the hardware and firmware: an I&sup2;S digital microphone, an SD card over 4-bit SDIO with FatFs and DMA, and external ROM. Early prototypes used an analog microphone sampled through the ADC with DMA, plus an SPI display for testing.</p>
 
-<h3> Software Used:</h3>
+<h3>Tools</h3>
 <ul>
-	<li>STM32CubeMX</li>
-	<li>Attolic TrueSTUDIO for STM32</li>
-	<li>Python</li>
+	<li>C, Python</li>
+	<li>STM32CubeMX, Atollic TrueSTUDIO</li>
 	<li>Altium Designer</li>
-
+	<li>Logic analyzer</li>
 </ul>
 	
 <a href="https://github.com/ThanosAndr/Speaker-Recognition-System-in-ARM">Github Repository</a>
