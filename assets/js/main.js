@@ -22,13 +22,12 @@
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
-			$window.on('load', function() {
+			if (document.readyState === 'complete')
 				$body.removeClass('is-loading');
-			});
-
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
+			else
+				$window.on('load', function() {
+					$body.removeClass('is-loading');
+				});
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -108,11 +107,6 @@
 						target: $body,
 						visibleClass: 'header-visible'
 					});
-
-			// Fix: Remove transitions on WP<10 (poor/buggy performance).
-				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#headerToggle, #header, #main')
-						.css('transition', 'none');
 
 	});
 
